@@ -12,11 +12,7 @@
 
 `docker-compose build`
 
-## 3.アプリの起動
-
-`docker-compose up`
-
-## 4.データベースに接続する
+## 3.データベースの設定
 
 > Replace the contents of `config/database.yml` with the following:
 
@@ -29,6 +25,7 @@ default: &default
   password:
   pool: 5
 
+
 development:
   <<: *default
   database: myapp_development
@@ -39,9 +36,13 @@ test:
   database: myapp_test
 ```
 
-## 5.データベースの作成
+## 4.データベースの作成
 
 `docker-compose run web rake db:create`
+
+## 5.アプリの起動
+
+`docker-compose up`
 
 ## 6.アプリの停止
 
