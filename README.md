@@ -1,4 +1,4 @@
-# docker compose を使用した Rails Template
+# docker compose を使用した Rails6 Template
 
 ### According to docker docs(Rails QuickStart)
 
